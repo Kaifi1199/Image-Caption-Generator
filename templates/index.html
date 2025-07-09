@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Caption Generator</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1f2937, #4b5563);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #f9fafb;
+    }
+    .container {
+      background: #111827;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 400px;
+    }
+    input[type="file"] {
+      margin-top: 1.5rem;
+      background: #f9fafb;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      width: 100%;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 12px 20px;
+      background-color: #10b981;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #059669;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📷 Image Caption Generator</h2>
+    <p>Upload an image to get its AI-generated caption</p>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required><br>
+      <button type="submit">Generate Caption</button>
+    </form>
+  </div>
+</body>
+</html>

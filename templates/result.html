@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caption Result</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #1e293b, #0f172a);
+      color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .caption-box {
+      background: #0f172a;
+      padding: 2rem;
+      margin: auto;
+      max-width: 700px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      color: #22d3ee;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="caption-box">
+    <img src="{{ image_path }}" alt="Uploaded Image">
+    <h3>📝 Generated Caption</h3>
+    <p>{{ caption }}</p>
+    <a href="/">⬅️ Try Another</a>
+  </div>
+</body>
+</html>
