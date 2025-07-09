@@ -1,0 +1,10 @@
+tensorflow==2.13.0
+numpy
+matplotlib
+pillow
+opencv-python
+scikit-learn
+nltk
+tqdm
+jupyter
+tokenizers
