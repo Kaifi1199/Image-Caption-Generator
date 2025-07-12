@@ -34,7 +34,7 @@ This project uses the **Flickr8k** dataset, which consists of 8000 images with 5
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/Image-Caption-Generator.git
+   git clone https://github.com/Kaifi1199/Image-Caption-Generator.git
    cd Image-Caption-Generator
 
 2. **Install Dependencies**
